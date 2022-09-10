@@ -6,6 +6,7 @@ label intro_scene:
     show roza
     pause
     hide roza
+    
 
     show roza talk
     k "Helló!"
