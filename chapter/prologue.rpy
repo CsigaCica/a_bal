@@ -6,7 +6,7 @@ label intro_scene:
     show roza
     pause
     hide roza
-    
+
 
     show roza talk
     k "Helló!"
@@ -14,6 +14,8 @@ label intro_scene:
     r "Téged hogy hívnak?"
     hide roza talk
 
+    '''
+    Custom name input
     label name:
         show roza
         $ y = renpy.input("")
@@ -22,9 +24,10 @@ label intro_scene:
             "Kérlek add meg a neved!!"
             jump name
         hide roza
+    '''
 
     show roza what
-    r "Biztos ez a neved?"
+    r "Biztos [y] a neved?"
     menu:
         "Igen, a nevem [y]":
             "Igen Róza, tényleg így hívnak"
@@ -72,6 +75,14 @@ label intro_scene:
         "A B osztály":
             y "Ha minden igaz, a B."
             jump b_class
+        "Véletlenszerű":
+            $ random_class = renpy.random.choice(['A', 'B']) 
+            if random_class == "A":
+                y "[random_class] osztályos vagyok"
+                jump a_class
+            else:
+                y "[random_class] osztályos vagyok"
+                jump b_class
 
     label after_what_class:
         y "Ideje menni órára!"

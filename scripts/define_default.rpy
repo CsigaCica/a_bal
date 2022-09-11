@@ -9,6 +9,7 @@ define l = Character("Lilla", color = "#5A0266")
 define z = Character("Zoli", color = "#113b00")
 define k = Character("???", color = "#2b2b2b")
 define t = Character("Tanár", color = "#643e24")
+define y = Character("Player")
 
 default story = 0 #if not 0 your class is A, if 0 then B
 default roza = 0 #if 0 then you can't go to prom with her
