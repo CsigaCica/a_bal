@@ -6,9 +6,9 @@ define confog.default_voice_volume = 0.7
 #characters
 define r = Character("Róza", color = "#aa004d")
 define l = Character("Lilla", color = "#5A0266")
-define z = Character("Zoli", color = "#113b00")
-define k = Character("???", color = "#2b2b2b")
-define t = Character("Tanár", color = "#643e24")
+define k = Character("Kemál", color = "#2e578d")
+define i = Character("???", color = "#2b2b2b")
+define t = Character("Tanár", color = "#208083")
 define y = Character("Player")
 
 default story = 0 #if not 0 your class is A, if 0 then B
@@ -26,5 +26,6 @@ image roza shy= "roza/shy.png"
 image roza shy shut= "roza/shy_shut.png"
 image roza what= "roza/what.png"
 image roza what shut= "roza/whyt_shut.png"
+
 
 
