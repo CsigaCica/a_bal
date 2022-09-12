@@ -2,6 +2,14 @@ label intro_scene:
     "Ma is szép napunk van."
     "Kicsit szürke az ég, de nem baj."
     "Ez a nap ettől szép."
+    "Remélem az új osztálytársaim kedvesek lesznek..."
+    menu:
+        "A régi osztálytársaimmal egyáltalán nem jöttem jól ki.":
+            "De ez egy új esély."
+            "Remélem itt sok barátom lesz majd!"
+        "Nagyon sok jó barátom volt az előző osztályomban.":
+            "Szerencsére velük bármikor tudok telefonon beszélgetni."
+            "Remélem itt is könnyen fog menni a barátkozás."
 
     show roza
     pause
@@ -9,22 +17,20 @@ label intro_scene:
 
 
     show roza talk
-    k "Helló!"
-    k "Az én nevem Róza!"
+    i "Helló!"
+    i "Az én nevem Róza!"
     r "Téged hogy hívnak?"
     hide roza talk
 
-    '''
-    Custom name input
-    label name:
-        show roza
-        $ y = renpy.input("")
-        $ y = y.strip()
-        if y == "":
-            "Kérlek add meg a neved!!"
-            jump name
-        hide roza
-    '''
+    # Custom name input
+    # label name:
+    #     show roza
+    #     $ y = renpy.input("")
+    #     $ y = y.strip()
+    #     if y == "":
+    #         "Kérlek add meg a neved!!"
+    #         jump name
+    #     hide roza
 
     show roza what
     r "Biztos [y] a neved?"
@@ -34,7 +40,7 @@ label intro_scene:
             jump option1
         "Nem, a nevem nem [y]":
             "Nem, nem ez a nevem"
-            jump option2
+            #jump option2
     hide roza what
 
     label option1:
