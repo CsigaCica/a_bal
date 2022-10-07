@@ -12,20 +12,22 @@ define t = Character("Tanár", color = "#208083")
 define y = Character("Player")
 
 default story = 0 #if not 0 your class is A, if 0 then B
-default roza = 0 #if 0 then you can't go to prom with her
+default point_r = 0 #if 0 then you can't go to prom with her
 default lilla = 0 #if 0 then you can't go to prom with her
 
 #roza
-image roza = "roza/roza2.png"
-image roza talk= "roza/talk.png"
-image roza angry= "roza/angry.png"
-image roza angry shut= "roza/angry_shut.png"
-image roza excited= "roza/excited.png"
-image roza excited shut= "roza/excited_shut.png"
-image roza shy= "roza/shy.png"
-image roza shy shut= "roza/shy_shut.png"
-image roza what= "roza/what.png"
-image roza what shut= "roza/whyt_shut.png"
+image r = "roza/roza.png"
+image r talk= "roza/talk.png"
+image r angry= "roza/angry.png"
+image r angry shut= "roza/angry_shut.png"
+image r excited= "roza/excited.png"
+image r excited shut= "roza/excited_shut.png"
+image r sad= "roza/sad.png"
+image r sad shut= "roza/sad_shut.png"
+image r shy= "roza/shy.png"
+image r shy shut= "roza/shy_shut.png"
+image r what= "roza/what.png"
+image r what shut= "roza/whyt_shut.png"
 
 
 
