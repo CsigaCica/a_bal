@@ -5,5 +5,9 @@
         "**/*.rpymc": true,
         "**/cache/": true
     },
-    "vscode-pets.position": "panel"
+    "vscode-pets.position": "explorer",
+    "vscode-pets.petColor": "white",
+    "vscode-pets.petSize": "medium",
+    "vscode-pets.petType": "dog",
+    "vscode-pets.theme": "none"
 }
