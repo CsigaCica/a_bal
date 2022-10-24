@@ -3,8 +3,8 @@ label daytwo:
 
     "csirip-csirip"
 
-    y "*sóhaj*"
-    y "Ideje készülődni, hamarosan be kell érnem a suliba."
+    player "*sóhaj*"
+    player "Ideje készülődni, hamarosan be kell érnem a suliba."
 
     scene folyoso
 

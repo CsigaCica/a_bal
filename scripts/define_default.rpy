@@ -3,6 +3,10 @@ define confog.default_music_volume = 0.7
 define confog.default_sfx_volume = 0.7
 define confog.default_voice_volume = 0.7
 
+#screen
+# Fade to black and back (out_time, hold_time, in_time, *, color="#000")
+define fade = Fade(0.5, 0.3, 0.5, color = "#2E2E2E")
+
 #characters
 define r = Character("Róza", color = "#FF006C")
 define l = Character("Lilla", color = "#CC00FF")
@@ -18,7 +22,7 @@ default current_question_idx = 0 # define the question counter
 default score = 0 # define the player's starting score at questions
 default quiz = 0
 
-#Roza
+#Róza
 image r = "roza/roza.png"
 image r talk= "roza/talk.png"
 image r angry= "roza/angry.png"
