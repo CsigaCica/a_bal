@@ -399,7 +399,7 @@ label dayone:
     else:
         show l 
         pause
-        hide
+        hide l
 
     
 
