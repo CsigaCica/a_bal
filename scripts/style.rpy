@@ -66,3 +66,4 @@ style frame:
 
 style custom_start_button_button_text:
     size 80
+

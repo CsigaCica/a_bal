@@ -7,7 +7,7 @@
     },
     "vscode-pets.position": "explorer",
     "vscode-pets.petColor": "white",
-    "vscode-pets.petSize": "medium",
+    "vscode-pets.petSize": "nano",
     "vscode-pets.petType": "dog",
-    "vscode-pets.theme": "none"
+    "vscode-pets.theme": "beach"
 }

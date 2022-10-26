@@ -6,14 +6,15 @@ define confog.default_voice_volume = 0.7
 #screen
 # Fade to black and back (out_time, hold_time, in_time, *, color="#000")
 define fade = Fade(0.5, 0.3, 0.5, color = "#2E2E2E")
+image black_background = "#2E2E2E"
 
 #characters
 define r = Character("Róza", color = "#FF006C")
 define l = Character("Lilla", color = "#CC00FF")
-define k = Character("Zoli", color = "#019900")
+define z = Character("Zoli", color = "#019900")
 define t = Character("Tanár", color = "#318F8D")
 define i = Character("???", color = "#2E2E2E")
-define player = Character("Player")
+define player = Character("az új diák")
 
 default class_a_or_b = 0 #if not 0 your class is A, if 0 then B
 default point_r = 0 #if 0 then you can't go to prom with her
@@ -21,6 +22,8 @@ default point_l = 0 #if 0 then you can't go to prom with her
 default current_question_idx = 0 # define the question counter
 default score = 0 # define the player's starting score at questions
 default quiz = 0
+default have_a_name = 0
+default know_zoli = 0
 
 #Róza
 image r = "roza/roza.png"
@@ -49,8 +52,11 @@ image l sad shut= "lilla/sad_shut.png"
 image l shy= "lilla/shy.png"
 image l shy shut= "lilla/shy_shut.png"
 image l what= "lilla/what.png"
-image l what shut= "lilla/whyt_shut.png"
+image l what shut= "lilla/what_shut.png"
 
+#Zoli
+image z = "zoli/zoli.png"
+image z talk= "zoli/talk.png"
 
 #Tanár
 image t = "teacher/teacher.png"
