@@ -393,8 +393,43 @@ label dayone:
     hide t talk 
     
     if class_a_or_b == 1:
-        show r
-        pause
+        show r excited
+        r "Végre kicsengettek!"
+        hide r excited
+        show r what
+        r "[player], te értetted az anyagot?"
+        hide r what 
+        show r what shut
+        menu:
+            "Persze, nem volt vészes":
+                player "Igen, a tanárnő jól magyarázott, könnyű volt követni."
+                hide r what shut
+                show r talk
+                r "Tényleg?"
+                r "De jó neked, [player]!"
+                hide r talk
+                show r sad
+                r "Én sajnos semmit sem értettem. Lemaradtam az elején."
+                hide r sad
+                show r sad shut
+                menu:
+                    "Felajánlom Rózának, hogy tanuljunk együtt":
+                        player "Mit szónál hozzá, ha elmagyaráznám neked?" 
+                        hide r sad shut
+                        show r excited
+                        r "Tényleg? Annak nagyon örülnék!"
+                        hide r excited 
+                        $ point_r +=1
+
+                    "Inkább egyedül tanulok":
+                        player "Sajnálom. De biztos van valaki, aki segít megérteni az anyagot."
+                        hide r sad shut 
+                        show r sad
+                        r "Remélem igazad van."
+                        r "Jó lenne, ha valaki segítene."
+                        show r sad shut at right with move
+                        show z at left
+                        pause
         hide r
     else:
         show l 
