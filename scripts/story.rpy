@@ -9,7 +9,7 @@ label start:
 
     "Let's begin the game:"
     
-    #call dayone
+    call dayone
     
 
     "Róza pont: [point_r]"
@@ -19,6 +19,9 @@ label start:
     
     call daytwo 
 
+    "Róza pont: [point_r]"
+    "Lilla pont: [point_l]"
+    
     # if class_a_or_b < 1:
     #     "B osztályos vagy"
     # else:

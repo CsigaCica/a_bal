@@ -1,10 +1,10 @@
 label dayone:
 # Reggel
     "Első nap"
-    scene black_background 
-    "Első nap"
-    pause 0.2
+    scene black_background
+    pause 0.1
     scene szoba with fade
+
 
     "*csirip-csirip*"
 
@@ -34,6 +34,7 @@ label dayone:
     menu:
         "Érdekel, hogy mi lehet a neve":
             "Ha már így egymásba botlottunk, megkérdezhetem mi a neved?"
+            $ know_roza += 1
             jump speak_with_roza
         "Nem akarom zavarni szegényt, így is megijesztettem":
             "Ne haragudj mennem kell, mégegyszer bocsi!"
@@ -86,7 +87,7 @@ label dayone:
         hide r shy
         show r what
         r "De ha nem ez a neved, akkor mi?"
-        hide r what
+        show r what shut
         jump name
 
     label player_name_right:
@@ -424,15 +425,16 @@ label dayone:
         show r shy
         r "És mindig nagyon mérges, ha nem vagyunk a helyünkön mire ideér."
         hide r shy
+
     else:
         show l
+        $ know_lilla += 1
         pause
         hide l
         show l talk
         i "Szia!" 
         i "Te vagy [player], igaz?"
         i "Én vagyok az osztályelnök ezért a tanárnő megkért, hogy segítsek neked beilleszkedni."
-        hide l talk
         show l shy
         i "Ne haragudj, még be se mutatkoztam."
         hide l shy
@@ -495,8 +497,9 @@ label dayone:
     t "Na gyerekek!"
     t "Kezdődhet az óra!" 
     t "Remélem mindenkinek minden világos volt." with fade
-    hide t talk 
+    show t
     "*CSÖRRR*"
+    hide t talk     
     
 # Beszélgetés Rózával
 
@@ -723,10 +726,6 @@ label dayone:
                         hide l sad
                         show l talk
                         l "Holnap találkozunk!"
-                        hide l talk 
-                        show l
-                        pause 0.1
-                        jump after_school
 
                     "Inkább elmegyek":
                         player "Én akkor megyek is."
@@ -736,10 +735,6 @@ label dayone:
                         hide l sad
                         show l talk at right
                         l "Holnap találkozunk." 
-                        hide l talk 
-                        show l
-                        pause 0.1
-                        jump after_school
 
             "Nem, teljesen elvesztem":
                 player "Egyáltalán nem, nagyon gyorsan haladt a tanárnő, már az elején lemaradtam."
@@ -766,10 +761,6 @@ label dayone:
                         hide l 
                         show l talk
                         l "Akkor szia [player]! Holnap találkozunk!"
-                        hide l talk 
-                        show l
-                        pause 0.1
-                        jump after_school
                     
                     "Jó lenne Lillával együtt tanulni":
                         $ point_l += 1
@@ -808,10 +799,11 @@ label dayone:
                         show l talk
                         l "Örülök, hogy segíthettem!"
                         l "Holnap találkozunk. Szia [player]!"
-                        hide l talk 
-                        show l
-                        pause 0.1
-                        jump after_school
+
+                hide l talk 
+                show l
+                pause 0.1
+                jump after_school        
                         
 # Iskola után
     label after_school:

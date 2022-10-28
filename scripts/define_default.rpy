@@ -23,6 +23,8 @@ default current_question_idx = 0 # define the question counter
 default score = 0 # define the player's starting score at questions
 default quiz = 0
 default have_a_name = 0
+default know_roza = 0
+default know_lilla = 0
 default know_zoli = 0
 
 #Róza
