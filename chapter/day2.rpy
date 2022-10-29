@@ -101,7 +101,7 @@ label daytwo:
         menu:
             "Nem szeretném elmondani Lillának":
                 player "Ne haragudj, de nem igazán érek rá."
-                hide l 
+                show l sad
                 l "Oh, értem."
                 l "Bocsi ha feltartottalak."
                 l "Sok sikert a holnapi dolgozathoz!"
@@ -291,6 +291,7 @@ label daytwo:
         r "Viszont hamarosan becsengetnek, úgyhogy ideje lassan indulnunk."
         hide r
 
+
 # Második óra 
     label class2_start:
     scene terem
@@ -308,13 +309,70 @@ label daytwo:
     show t 
     "*CSÖRRR*"
     hide t
-    pause 0.4
+    pause 
     
 # Tanulás Rózával 
     if class_a_or_b == 1:
         show r shy
-        r "Jaj, úgy izgulok a holnap miatt!"
-        show r shy shut 
+        r "Jaj [player], úgy izgulok a holnap miatt!"
+        r "Nagyon sokat tanultam rá, de attól tartok, hogy a tanárnő pont olyat fog kérdezni, amit nem tudok."
+        show r what 
+        r "Te nem vagy ideges miatta?"
+        show r what shut 
+        menu: 
+            "Egy kicsit de":
+                $ point_r +=1
+                player "De, egy kicsit azért izgulok, hogy jól menjen."
+                show r talk 
+                r "Akkor mit szólnál hozzá ha átismételnénk, hogy biztos minden menjen."
+                show r 
+                menu:
+                    "Szívesen átismétlen Rózával az anyagot":
+                        jump study_w_roza2
+                    "Nem szeretném átismételni Rózával az anyagot":
+                        jump not_study_w_roza2
+
+
+            "Nem, nem vagyok ideges a dolgozat miatt":
+                player "Nem, egyáltalán nem vagyok ideges miatta."
+                show r excited
+                r "Tényleg?"
+                show r shy
+                r "Úgy irigyellek..."
+                show r talk
+                r "Segítesz nekem átvenni a mai anyagot?"
+                show r 
+                menu: 
+                    "Szívesen átismétlen Rózával az anyagot":
+                        label study_w_roza2:
+                        $ point_r +=1
+                        player "Persze, szívesen segítek tanulni."
+                        show r excited
+                        r "Tényleg? Jaj de jó!"
+                        show r talk
+                        r "Akkor tanuljunk!"
+                        show r 
+                        player "Rendben. Akkor kezdjük." 
+                        show r talk 
+                        r "Köszi [player], hogy tanultál velem!" with fade
+                        show r excited
+                        r "Mostmár sokkal több önbizalmam van a holnappal kapcsolatban!"
+                        show r talk
+                        r "Most mennem kell, de holnap még beszélünk!"
+                        r "Sok sikert a holnapi dolgozathoz!"
+                        
+
+                    "Nem szeretném átismételni Rózával az anyagot":
+                        label not_study_w_roza2:
+                        player "Nem szeretném, bocsi."
+                        show r sad 
+                        r "Oh... Rendben van [player]."
+                        r "Akkor megkérek valaki mást..."
+                        r "Azért sok sikert a holnapi dolgozatra való tanuláshoz!"
+        show r talk              
+        r "Szia!"
+        show r
+        pause 0.1
 
 # Tanulás Lillával
     else:
@@ -333,18 +391,11 @@ label daytwo:
                 menu:
                     "Nem szeretném átismételni az anyagot":
                         player "Nem szükséges, de azért köszi."
-                        show l sad
-                        l "Rendben."
-                        show l talk
-                        l "De szívesen segítek benne bármikor."
-                        show l
-                        player "Rendben Lilla, köszi."
-                        show l talk
-                        l "Nincs mit [player]."
+                        jump not_study_w_lilla2
 
                     "Igen, szeretnék csatlakozni":
                         player "Szívesen csatlakozok átismételni az anyagot."
-                        jump study_w_lilla
+                        jump study_w_lilla2
 
                 
             "Nem, nem mindent":
@@ -357,7 +408,7 @@ label daytwo:
                 menu: 
                     "Igen":
                         player "Igen, annak örülnék."
-                        label study_w_lilla:
+                        label study_w_lilla2:
                         $ point_l += 1
                         show l excited
                         l "Szuper! Akkor tanuljunk!"
@@ -383,6 +434,7 @@ label daytwo:
 
                     "Nem":
                         player "Nem kell köszi. Menni fog egyedül is."
+                        label not_study_w_lilla2:
                         show l sad
                         l "Oh, rendben."
                         show l talk
@@ -391,7 +443,9 @@ label daytwo:
                         player "Rendben Lilla, köszi."
                         show l talk
                         l "Nincs mit [player]."
-        hide l 
+
+        show l
+        pause 0.1
 
         label after_school2:
         scene szoba with fade

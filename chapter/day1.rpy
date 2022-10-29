@@ -530,13 +530,14 @@ label dayone:
                         show r excited
                         r "Tényleg? Annak nagyon örülnék!"
                         hide r excited 
-                        jump learn_with_Roza
+                        jump study_w_roza_1
 
                     "Inkább egyedül tanulok":
                         player "Sajnálom. De biztos van valaki, aki segít megérteni az anyagot."
                         jump meet_with_Zoli
 
             "Nem, teljesen elvesztem":
+                $ point_r +=1
                 player "Egyáltalán nem, nagyon gyorsan haladt a tanárnő, már az elején lemaradtam."
                 hide r what shut
                 show r talk
@@ -568,7 +569,7 @@ label dayone:
                         show r talk
                         r "Izgultam, hogy nem szeretnéd. De örülök, hogy megkérdeztem!"
                         hide r talk 
-                        jump learn_with_Roza 
+                        jump study_w_roza_1 
 
                     "Inkább nem tanulok együtt Rózával":
                         player "Sajnálom, de nem hiszem, hogy az jó ötlet lenne."
@@ -642,7 +643,7 @@ label dayone:
                     pause 0.1
                     jump after_school
 
-        label learn_with_Roza:
+        label study_w_roza_1:
             $ point_r +=1
             show r talk 
             r "Akkor szerintem kezdjük is el, amíg friss az órai anyag."
@@ -664,10 +665,8 @@ label dayone:
             hide r excited
             show r talk
             r "Szia!"
-            hide r talk 
             show r
             pause 0.1
-            jump after_school
 
 # Beszélgetés Lillával
 
@@ -800,10 +799,8 @@ label dayone:
                         l "Örülök, hogy segíthettem!"
                         l "Holnap találkozunk. Szia [player]!"
 
-                hide l talk 
                 show l
-                pause 0.1
-                jump after_school        
+                pause 0.1    
                         
 # Iskola után
     label after_school:

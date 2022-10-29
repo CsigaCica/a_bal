@@ -14,7 +14,7 @@ screen choice(items):
     #         textbutton i.caption action i.action
     vbox:
         xalign 0.5
-        ypos 350
+        ypos 420
         spacing gui.choice_spacing
         for i in items:
             textbutton i.caption action i.action

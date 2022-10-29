@@ -10,17 +10,16 @@ label start:
     "Let's begin the game:"
     
     call dayone
-    
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    scene black_background 
-    
     call daytwo 
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
+
+    call daythree
     
     # if class_a_or_b < 1:
     #     "B osztályos vagy"
