@@ -7,17 +7,17 @@ label start:
 
     scene black_background 
 
-    "Let's begin the game:"
+    # "Let's begin the game:"
     
-    call dayone
+    # call dayone
 
-    "Róza pont: [point_r]"
-    "Lilla pont: [point_l]"
+    # "Róza pont: [point_r]"
+    # "Lilla pont: [point_l]"
 
-    call daytwo 
+    # call daytwo 
 
-    "Róza pont: [point_r]"
-    "Lilla pont: [point_l]"
+    # "Róza pont: [point_r]"
+    # "Lilla pont: [point_l]"
 
     call daythree
     

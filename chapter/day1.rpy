@@ -96,12 +96,21 @@ label dayone:
         r "Szia [player]! Örülök hogy megismerhetlek!"
         hide r excited
 
-# Osztály választás
+#Osztály választás
         show r what
         r "Milyen osztályos vagy?"
         hide r what
         show r what shut
         menu:
+            "Véletlenszerű":
+                $ random_class = renpy.random.choice(['A', 'B']) 
+                if random_class == "A":
+                    player "[random_class] osztályos vagyok."
+                    jump class_a
+                else:
+                    player "[random_class] osztályos vagyok."
+                    jump class_b
+
             "A osztályos":
                 player "Azt hiszem az A osztályos."
                 label class_a:
@@ -121,15 +130,6 @@ label dayone:
                 r "Oh, én A osztályos vagyok..."
                 r "Remélem azért szünetben még találkozunk!"
                 hide r sad 
-
-            "Véletlenszerű":
-                $ random_class = renpy.random.choice(['A', 'B']) 
-                if random_class == "A":
-                    player "[random_class] osztályos vagyok."
-                    call class_a
-                else:
-                    player "[random_class] osztályos vagyok."
-                    call class_b
 
 # Barát szerzés
         show r what
@@ -206,8 +206,8 @@ label dayone:
                 show r talk
                 r "Akkor nem tartalak fel."
                 r "Szia!"
-                hide r talk
-                jump alone_to_class
+                hide r
+
 
 # Beszélgetés kihagyása Rózával
 
@@ -817,5 +817,4 @@ label dayone:
     
     scene black_background with fade
     "Első nap vége"
-
 return
