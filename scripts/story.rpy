@@ -19,15 +19,10 @@ label start:
     # "Róza pont: [point_r]"
     # "Lilla pont: [point_l]"
 
-    call daythree
+    #call daythree
+    call first_exam
     
-    # if class_a_or_b < 1:
-    #     "B osztályos vagy"
-    # else:
-    #     "A osztályos vagy"
-
-    call quiz
-
+    
     "Vége"
    
 return
