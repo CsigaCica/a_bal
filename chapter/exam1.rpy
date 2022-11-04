@@ -1,23 +1,5 @@
 label first_exam:
 
-    scene black_background 
-    pause 0.1
-    scene terem with fade
-
-    "*CSÖRRR*"
-    show t talk 
-    t "Nos, ideje felvázolnom a dolgozatírás menetét."
-    t "Mindenki fog kapni egy lapot, aminek a bal felső sarkába kell írnotok a neveteket."
-    t "Ez után szóban fogom feltenni a kérdéseket, majd négy választ hozzá."
-    t "A helyes válasz számát pedig írjátok a lapotokra."
-    t "Minden kérdést csak egyszer fogok feltenni."
-    t "Nem fogom megismételni, úgyhogy nagyon figyeljetek."
-    t "A jó jegyért legalább négy kérdésre helyesen kell felelnetek."
-    t "Akkor kezdem is."
-
-    show t 
-    pause
-
 # Kérdések:
 
 # Történelem
@@ -240,7 +222,7 @@ label first_exam:
 
     else:
         show t talk
-        t "Hány éves a Föld?"
+        t "Megközelítőleg hány éves a Föld?"
         show t
         menu:
             "Első válasz: 4,5 milliárd éves":
@@ -394,7 +376,11 @@ label first_exam:
             "Negyedik válasz: 4":
                 "4"
 
+return
+
 # Eredmény
+
+label first_result:
 
     show t talk
     if answer == 8:
@@ -402,7 +388,10 @@ label first_exam:
     elif answer >= 4:
         "Hát ez egy közepes.."
     else:
-        "Megbuktál"
+        t "Sajnos nem sikerült mindenkinek jól ez a dolgozat."
+        t "Akiknek ez most nem ment, vagyis akik nem érték el legalább a 4 pontot, azoknak korrepetációt fogok tartani holnap után."
+        t "Tudom, hogy aznap van a bál, de sajnos páran ki kell hagyjátok."
+        t "Legközelebb készüljetek többet."
 
     pause
 

@@ -2,8 +2,8 @@
 
 label start:
     
-    #if you want to block rollback, use the next line:
-    #$ renpy.block_rollback()
+    # if you want to block rollback, use the next line:
+    # $ renpy.block_rollback()
 
     scene black_background 
 
@@ -19,22 +19,10 @@ label start:
     # "Róza pont: [point_r]"
     # "Lilla pont: [point_l]"
 
-    #call daythree
-    call first_exam
+    call daythree
+    
     
     
     "Vége"
    
 return
-
-
-# label daychange:
-#     if day == 1:
-#         call intro_scene
-#     elif day == 2:
-#         call speech
-#     elif day <= 3 and day >= 11:
-#         call intro_scene
-#     else:
-#         call prom
-# return
