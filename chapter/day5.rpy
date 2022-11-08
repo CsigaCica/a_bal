@@ -1,3 +1,5 @@
-label speech5:
+label dayfive:
     t "Beszéd-beszéd"
+    call questions
+    pause 
 return

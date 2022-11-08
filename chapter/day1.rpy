@@ -29,7 +29,6 @@ label dayone:
     show r shy 
     i "Sz-szia."
     i "Semmi baj, az én hibám."
-    hide r shy
     show r shy shut
     menu:
         "Érdekel, hogy mi lehet a neve":
@@ -39,13 +38,11 @@ label dayone:
         "Nem akarom zavarni szegényt, így is megijesztettem":
             "Ne haragudj mennem kell, mégegyszer bocsi!"
             jump alone_to_class
-    hide r shy shut
         
 # Beszélgetés Rózával
     label speak_with_roza:
         show r 
         pause 
-        hide r 
         show r talk
         i "Az én nevem Róza!"
         $ point_r +=1
@@ -53,7 +50,6 @@ label dayone:
         r "Te új diák vagy?"
         r "Még nem láttalak erre..."
         r "Mi a neved?"
-        hide r talk
 
 # Egyedi név megadása
     show r
@@ -65,11 +61,8 @@ label dayone:
             "Kérlek add meg a neved!!"
             jump name
 
-    hide roza
-
     show r what
     r "Biztos [player] a neved?"
-    hide r what 
     show r what shut
     menu:
         "Igen, a nevem [player]":
@@ -78,28 +71,22 @@ label dayone:
         "Nem, a nevem nem [player]":
             "Nem, nem ez a nevem."
             jump player_name_wrong
-    hide r what shut
 
     label player_name_wrong:
-        hide r what
         show r shy
         r "Akkor miért mondtad hogy így hívnak..."
-        hide r shy
         show r what
         r "De ha nem ez a neved, akkor mi?"
         show r what shut
         jump name
 
     label player_name_right:
-        hide r what
         show r excited
         r "Szia [player]! Örülök hogy megismerhetlek!"
-        hide r excited
 
 #Osztály választás
         show r what
         r "Milyen osztályos vagy?"
-        hide r what
         show r what shut
         menu:
             "Véletlenszerű":
@@ -114,99 +101,81 @@ label dayone:
             "A osztályos":
                 player "Azt hiszem az A osztályos."
                 label class_a:
-                hide r what shut 
                 show r excited
                 r "Tényleg? Én is oda járok!"
                 r "Ezek szerint osztálytársak vagyunk!"
                 $ class_a_or_b +=1
                 $ point_r +=1
-                hide r excited 
 
             "B osztályos":
                 player "Ha minden igaz, B."
                 label class_b:
-                hide r what shut
                 show r sad
                 r "Oh, én A osztályos vagyok..."
                 r "Remélem azért szünetben még találkozunk!"
-                hide r sad 
 
 # Barát szerzés
         show r what
         r "Akkor még nem is ismersz senkit, igaz?"
-        hide r what
         show r what shut
 
         menu:
-            "Elmondom az igazat":
+            "Tényleg nem ismerek senkit":
                 $ point_r +=1
                 player "Igaz, még nem sikerült senkivel se összebarátkoznom."
                 player "De még rengeteg időm lesz rá."
-                hide r what shut 
                 show r excited
                 r "Pontosan!"
-                hide r excited
                 show r talk 
                 r "Milyen pozitív vagy!"
                 r "Én szívesen leszek az első barátod!"
+                show r shy
                 r "Persze csak ha te is szeretnéd."
-                hide r talk
                 show r 
 
                 menu:
                     "Szeretném, hogy Róza legyen az első barátom":
                         $ point_r +=1
                         player "Megtisztelnél vele!"
-                        hide r
                         show r excited
                         r "Hú de jó!"
-                        hide r excited
                         show r talk
                         r "Szeretnéd hogy körbevezesselek?"
-                        hide r talk
                         show r 
 
                         menu:
                             "Szeretném, hogy Róza vezessen körbe az iskola területén":
                                 $ point_r +=1
                                 player "Igen, az jó lenne!"
-                                hide r 
                                 show r excited
                                 r "Remek!"
-                                hide r excited
                                 show r talk
                                 r "Akkor kérlek kövess."
                                 jump around_with_roza
 
                             "Nem szeretném, hogy Róza körbevezessen":
                                 player "Nem kell, köszi. Felfedezem egyedül."
-                                hide r
                                 show r sad
                                 r "Oh, oké."
                                 r "Azért majd ne késs el az órádról."
-                                hide r sad
                                 show r talk
                                 r "Szia!"
                                 jump alone_to_class
 
                     "Inkább valaki mással barátkoznék össze elsőre":
                         player "Nem köszi, először szeretnék még másokkal is összeismerkedni."
-                        hide r 
                         show r sad
                         r "Oh, rendben van."
                         r "Akkor szia..."
 
-            "Hazudok róla":
+            "Azt mondom, már vannak barátaim":
                 player "De igen, már több barátot is szereztem!"
-                hide r what shut
                 show r excited
                 r "Tényleg?"
                 r "Ez nagyszerű!"
-                hide r excited
                 show r talk
                 r "Akkor nem tartalak fel."
                 r "Szia!"
-                hide r
 
 
 # Beszélgetés kihagyása Rózával
@@ -249,14 +218,11 @@ label dayone:
                 scene tanari
                 show t back 
                 pause
-                hide t back
                 show t 
                 pause
-                hide t 
                 show t talk
                 t "Jó napot!"
                 t "Maga pedig?"
-                hide t talk
                 $ have_a_name += 1
                 label name2:
                     show t
@@ -265,10 +231,8 @@ label dayone:
                     if player == "":
                         "Kérlek add meg a neved!!"
                         jump name2
-                    hide t
                     show t talk
                     t "Szóval [player]?"
-                    hide t talk
                     show t
                     menu:
                         "Igen, a nevem [player]":
@@ -277,48 +241,37 @@ label dayone:
                         "Nem, a nevem nem [player]":
                             "Vagyis..."
                             jump player_name_wrong2
-                    hide t 
 
                     label player_name_wrong2:
-                        hide t 
                         show t talk
                         t "Sajnálom, de erre nem érek rá."
-                        hide t talk 
                         jump name2
 
                 label player_name_right2:
                     show t talk
                     t "[player]. Miben segíthetek?"
-                    hide t talk
                     show t
                     player "Az osztályom keresem."
-                    hide t 
                     show t talk
                     t "Nem vezette körbe senki?"
                     t "Sajnálom, nekem erre most nincs időm, a harmadik ajtó a maga terme."
                     t "Igyekezzen, mert hamarosan kezdődik az óra!"
-                    hide t talk
                     jump door
             else:
                 scene tanari
                 show t back 
                 pause
-                hide t back
                 show t 
                 pause
-                hide t 
                 show t talk
                 t "Jó napot!"
                 t "[player]. Miben segíthetek?"
-                hide t talk
                 show t
                 player "Az osztályom keresem."
-                hide t 
                 show t talk
                 t "Nem vezette körbe senki?"
                 t "Sajnálom, nekem erre most nincs időm, a harmadik ajtó a maga terme."
                 t "Igyekezzen, mert hamarosan kezdődik az óra!"
-                hide t talk
                 jump door
 
         label door2:
@@ -343,20 +296,14 @@ label dayone:
         r "Itt bármikor megtalálod az osztályfőnököd, vagy bármelyik másik tanárt."
         show r at right with move
         show t at left
-        hide r  
         show r shy shut at right
-        hide t
         show t talk at left
         t "Jó napot!"
         t "Keresnek valakit?"
-        hide t talk at left
         show t at left
-        hide r shy shut at right
         show r shy at right
         r "Nem köszönjük, csak [player] megkért, hogy vezessem körbe."
-        hide r shy at right
         show r shy shut at right
-        hide t at left
         show t talk at left 
         t "Rendben, de hamarosan kezdődik az óra, ne késsenek el róla!"
 
@@ -383,25 +330,20 @@ label dayone:
         scene folyoso
         show r talk
         r "Igazából ennyi, a többi ajtó mögött más osztálytermek vannak."
-        hide r talk
         show r 
         menu:
             "Megköszönöm Rózának, hogy körbevezetett":
                 player "Köszi Róza, hogy körbevezettél!"
                 player "Rendes volt tőled!"
-                hide r 
                 show r shy
                 r "Igazán nincs mit, én ajánlottam fel."
-                hide r shy
                 show r talk
                 r "De ideje mennünk órára!"
                 $ point_r += 1
             "Felesleges megköszönnöm":
                 player "Remek, akkor mehetünk is órára!"
-                hide r talk
                 show r sad shut
                 pause
-                hide r sad shut
                 show r talk
                 r "Igazad van, menjünk!"
 
@@ -416,12 +358,10 @@ label dayone:
     if class_a_or_b == 1:
         show r
         player "Ne haragudj, megmondanád, hogy melyik az én helyem?"
-        hide r 
         show r talk
         r "Persze!"
         r "Ez lesz itt mellettem."
         r "Nyugodtan ülj le, a tanárnő hamarosan ideér."
-        hide r talk
         show r shy
         r "És mindig nagyon mérges, ha nem vagyunk a helyünkön mire ideér."
         hide r shy
@@ -430,7 +370,6 @@ label dayone:
         show l
         $ know_lilla += 1
         pause
-        hide l
         show l talk
         i "Szia!" 
         i "Te vagy [player], igaz?"
@@ -445,7 +384,6 @@ label dayone:
         if have_a_name == 0:
                 $ have_a_name += 1
 
-                hide l talk
                 show l what 
                 l "Téged hogy hívnak?"               
                 hide l what 

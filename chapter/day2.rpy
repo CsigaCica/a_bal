@@ -446,7 +446,8 @@ label daytwo:
 
         show l
         pause 0.1
-
+        
+# Iskola után 
         label after_school2:
         scene szoba with fade
         pause 0.2

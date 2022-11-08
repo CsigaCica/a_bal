@@ -1,3 +1,3 @@
-label speech7:
-    t "Beszéd-beszéd"
+label dayseven:
+    "Bál"
 return
