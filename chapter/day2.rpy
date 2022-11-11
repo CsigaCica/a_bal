@@ -443,22 +443,11 @@ label daytwo:
                         player "Rendben Lilla, köszi."
                         show l talk
                         l "Nincs mit [player]."
-
         show l
         pause 0.1
-        
+
 # Iskola után 
-        label after_school2:
-        scene szoba with fade
-        pause 0.2
-        menu:
-            "Ez egy jó nap volt":
-                "Ma igazán jól éreztem magam."
-                "Mindenki nagyon kedves volt a suliban."
-                
-            "Ez a nap nem volt olyan jó":
-                "A mai nap azért lehetett volna jobb is."
-                "De a holnap még lehet jobb."
+    call after_school
     
     scene black_background with fade
     "Második nap vége"

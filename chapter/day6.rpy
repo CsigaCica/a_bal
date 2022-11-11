@@ -1,6 +1,18 @@
 label daysix:
+    # Reggel
+    "Hatodik nap"
+    scene black_background 
+    pause 0.1
+    scene szoba with fade
+
+    "*csirip-csirip*"
+
+    player " "
+
+    scene folyoso 
+    pause 0.4
+
     t "Beszéd-beszéd"
-    "TESZT"
     
 # Második eredmény
 label second_result:
@@ -17,4 +29,9 @@ label second_result:
 
     pause
 
+# Iskola után
+    call after_school
+    
+    scene black_background with fade
+    "Hatodik nap vége"   
 return

@@ -376,7 +376,6 @@ label dayone:
         i "Én vagyok az osztályelnök ezért a tanárnő megkért, hogy segítsek neked beilleszkedni."
         show l shy
         i "Ne haragudj, még be se mutatkoztam."
-        hide l shy
         show l talk
         l "Az én nevem Lilla!"
 
@@ -385,8 +384,7 @@ label dayone:
                 $ have_a_name += 1
 
                 show l what 
-                l "Téged hogy hívnak?"               
-                hide l what 
+                l "Téged hogy hívnak?"
 
                 label name3:
                     show l what shut 
@@ -396,10 +394,8 @@ label dayone:
                         "Kérlek add meg a neved!!"
                         jump name3
 
-                    hide l what shut
                     show l what
                     l "Tényleg [player] a neved?"
-                    hide l what
                     show l what shut 
                     menu:
                         "Igen, a nevem [player]":
@@ -430,7 +426,6 @@ label dayone:
     pause 0.7
     show t with moveinright
     pause 0.3
-    hide t 
     show t talk
     t "Na gyerekek!"
     t "Kezdődhet az óra!" 
@@ -444,27 +439,21 @@ label dayone:
     if class_a_or_b == 1:
         show r excited
         r "Végre kicsengettek!"
-        hide r excited
         show r what
         r "[player], te értetted az anyagot?"
-        hide r what 
         show r what shut
         menu:
             "Persze, nem volt vészes":
                 player "Igen, a tanárnő jól magyarázott, könnyű volt követni."
-                hide r what shut
                 show r talk
                 r "Tényleg?"
                 r "De jó neked, [player]!"
-                hide r talk
                 show r sad
                 r "Én sajnos semmit sem értettem. Lemaradtam az elején."
-                hide r sad
                 show r sad shut
                 menu:
                     "Felajánlom Rózának, hogy tanuljunk együtt":
                         player "Mit szónál hozzá, ha elmagyaráznám neked?" 
-                        hide r sad shut
                         show r excited
                         r "Tényleg? Annak nagyon örülnék!"
                         hide r excited 
@@ -477,44 +466,32 @@ label dayone:
             "Nem, teljesen elvesztem":
                 $ point_r +=1
                 player "Egyáltalán nem, nagyon gyorsan haladt a tanárnő, már az elején lemaradtam."
-                hide r what shut
                 show r talk
                 r "Tényleg? Ne aggódj, én se tudtam követni."
-                hide r talk
                 show r shy 
                 r "M-mit szólnál hozzá...ha esetleg...ömm.."
-                hide r shy
                 show r shy shut
                 player "Igen? Mit szeretnél mondani?"
-                hide r shy shut
                 show r shy 
                 r "T-tud-tudod...ha mi...ketten.."
-                hide r shy
                 show r shy shut
                 player "Róza, ha nem modnod ki, nem értelek."
-                hide r shy shut
                 show r angry 
                 r "T-tanulhahtnánk együtt!"
-                hide r angry
                 show r shy shut 
                 menu:
                     "Szeretnék Rózával együtt tanulni":
                         player "Ez egy remek ötlet! Szívesen tanulnék veled, Róza."
-                        hide r shy shut 
                         show r excited 
                         r "Tényleg? Jaj de jó!"
-                        hide r excited
                         show r talk
                         r "Izgultam, hogy nem szeretnéd. De örülök, hogy megkérdeztem!"
-                        hide r talk 
                         jump study_w_roza_1 
 
                     "Inkább nem tanulok együtt Rózával":
                         player "Sajnálom, de nem hiszem, hogy az jó ötlet lenne."
-                        hide r shy shut
                         show r sad 
                         r "Oh... Persze, megértem."
-                        hide r sad 
                         show r sad shut
                         player "De biztos van valaki, aki szívesen segít."
                         jump meet_with_Zoli
@@ -523,7 +500,6 @@ label dayone:
 
         label meet_with_Zoli:
             $ know_zoli += 1
-            hide r sad shut 
             show r sad
             r "Remélem igazad van."
             r "Jó lenne, ha valaki segítene."
@@ -585,22 +561,17 @@ label dayone:
             $ point_r +=1
             show r talk 
             r "Akkor szerintem kezdjük is el, amíg friss az órai anyag."
-            hide r talk
             show r 
             player "Rendben. Akkor kezdjük is." 
             show r excited 
             r "Ó! Így már értem!" with fade
-            hide r excited 
             show r talk
             r "Köszi [player], hogy időt szántál rám!"
             r "Mostmár biztos jól fog sikerülni a dolgozatírás!"
-            hide r talk
             show r shy
             r "Viszont nagyon elszaladt az idő, úgyhogy most rohannom kell."
-            hide r shy
             show r excited
             r "Mégegyszer köszi mindent [player]!"
-            hide r excited
             show r talk
             r "Szia!"
             show r
@@ -611,14 +582,12 @@ label dayone:
     else:
         show l talk
         l "[player], értetted az anyagot?"
-        hide l talk 
         show l
         menu:
             "Persze, nem volt vészes":
                 player "Igen, a tanárnő jól magyarázott, könnyű volt követni."
                 $ point_l += 1
                 $ know_zoli += 1
-                hide l 
                 show l talk
                 l "Ezt örömmel hallom."
                 l "Ha esetleg később mégis felmerülne benned egy kérdés, nyugodtan keress meg. Szívesen elmagyarázom."
@@ -675,64 +644,47 @@ label dayone:
 
             "Nem, teljesen elvesztem":
                 player "Egyáltalán nem, nagyon gyorsan haladt a tanárnő, már az elején lemaradtam."
-                hide l 
                 show l sad 
                 l "Oh, ezt sajnálattal hallom."
-                hide l sad
                 show l talk
                 l "Szeretnéd, hogy segítsek?"
-                hide l talk
                 show l 
                 menu:
                     "Nem szeretnék Lillával tanulni":
                         player "Nem kell, megoldom egyedül is. De azért köszi."
-                        hide l 
                         show l sad
                         l "Oh, oké..."
-                        hide l sad
                         show l talk
                         l "Azért ha valahol elakadnál szólj, szívesen elmagyarázom!"
-                        hide l talk
                         show l
                         player "Rendben van Lilla, megjegyzem!"
-                        hide l 
                         show l talk
                         l "Akkor szia [player]! Holnap találkozunk!"
                     
                     "Jó lenne Lillával együtt tanulni":
                         $ point_l += 1
                         player "Igen, az jó lenne. Köszi."
-                        hide l 
                         show l excited
                         l "Igazán nincs mit!"
-                        hide l excited
                         show l talk
                         l "Kezdem az elején, hogy biztos mindent érts, jó?"
-                        hide l talk 
                         show l
                         pause 0.1
                         show l talk 
                         l "Így már minden világos?" with fade
-                        hide l talk 
                         show l 
                         player "Igen Lilla! Köszi, hogy segítettél!"
-                        hide l 
                         show l shy 
                         l "T-tényleg nincs mit."
-                        hide l shy 
                         show l talk 
                         l "Nekem is jó, ha ismétlem az anyagot."
                         l "És szeretek segíteni az osztálytársaimnak." 
-                        hide l talk
                         show l
                         player "Igen, nem véletlenül vagy te az osztályelnök!"
-                        hide l
                         show l talk
                         l "Na igen."
-                        hide l talk
                         show l sad
                         l "De nekem most mennem kell."
-                        hide l sad
                         show l talk
                         l "Örülök, hogy segíthettem!"
                         l "Holnap találkozunk. Szia [player]!"
@@ -752,7 +704,9 @@ label dayone:
             "Ez a nap nem volt olyan jó":
                 "A mai nap azért lehetett volna jobb is."
                 "De a holnap még lehet jobb."
-    
+    return
+
     scene black_background with fade
     "Első nap vége"
+
 return

@@ -4,7 +4,7 @@ define confog.default_sfx_volume = 0.7
 define confog.default_voice_volume = 0.7
 
 #screen
-# Fade to black and back (out_time, hold_time, in_time, *, color="#000")
+# Fade to black and back (out_time, hold_time, in_time, *, color="#000000")
 define fade = Fade(0.5, 0.3, 0.5, color = "#2E2E2E")
 image black_background = "#2E2E2E"
 

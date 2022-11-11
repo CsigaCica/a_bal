@@ -31,19 +31,19 @@ define gui.idle_color = '#f058b1'
 define gui.idle_small_color = '#525252'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#cc77be'
+define gui.hover_color = '#6d2260'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#833163'
+define gui.selected_color = '#2c0c20'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#2b2b2be0'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
-define gui.muted_color = '#e066a3'
-define gui.hover_muted_color = '#ea99c1'
+define gui.muted_color = '#5a1740' #'#e066a3'
+define gui.hover_muted_color = '#9b3189' #'#ea99c1'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#111111'
@@ -207,9 +207,9 @@ define gui.choice_button_borders = Borders(100, 5, 100, 5)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#995880"
-define gui.choice_button_text_hover_color = "#c274a4"
-define gui.choice_button_text_insensitive_color = "#444444"
+define gui.choice_button_text_idle_color =  '#5a1740' #"#995880"
+define gui.choice_button_text_hover_color = '#9b3189' #"#c274a4" 
+define gui.choice_button_text_insensitive_color = "#303030"
 
 
 ## File Slot Buttons ###########################################################

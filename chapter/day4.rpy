@@ -12,9 +12,14 @@ label dayfour:
     player "Ma tudjuk meg a dolgozat eredményét."
     player "Kíváncsi vagyok hányas lett!"
 
-    scene folyoso 
-    pause 0.4
-    t "Beszéd-beszéd"
+    scene udvar with fade
+    pause 0.7
+    scene folyoso with fade
+    pause 0.7
+    scene tanari with fade
+    pause
+    
+
 
 
 
@@ -34,18 +39,8 @@ label first_result:
 
     pause
 
-
-    label after_school4:
-        scene szoba with fade
-        pause 0.2
-        menu:
-            "Ez egy jó nap volt":
-                "Ma igazán jól éreztem magam."
-                "Mindenki nagyon kedves volt a suliban."
-                
-            "Ez a nap nem volt olyan jó":
-                "A mai nap azért lehetett volna jobb is."
-                "De a holnap még lehet jobb."
+# Iskola után
+    call after_school
     
     scene black_background with fade
     "Negyedik nap vége"
