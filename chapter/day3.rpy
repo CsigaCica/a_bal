@@ -63,7 +63,7 @@ label daythree:
     t "Akkor kezdem is."
     show t
      
-    #call questions
+    call questions
     
     show t 
     show t talk with fade
@@ -76,8 +76,7 @@ label daythree:
     "*CSÖRRR*"
     
     scene folyoso
-
-    $ class_a_or_b = 1
+    
 
 # Beszélgetés Rózával 
     if class_a_or_b == 1:

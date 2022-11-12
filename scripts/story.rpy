@@ -19,10 +19,10 @@ label start:
     # "Róza pont: [point_r]"
     # "Lilla pont: [point_l]"
 
-    call daythree
+    # call daythree
 
-    "Róza pont: [point_r]"
-    "Lilla pont: [point_l]"
+    # "Róza pont: [point_r]"
+    # "Lilla pont: [point_l]"
 
     call dayfour
 
