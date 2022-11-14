@@ -17,8 +17,8 @@ define i = Character("???", color = "#2E2E2E")
 define player = Character("az új diák")
 
 default class_a_or_b = 0 #if not 0 your class is A, if 0 then B
-default point_r = 0 #if 0 then you can't go to prom with her Max point: 22 TODO
-default point_l = 0 #if 0 then you can't go to prom with her Max point: 19 TODO
+default point_r = 0 #if 0 then you can't go to prom with her Max point: 22 
+default point_l = 0 #if 0 then you can't go to prom with her Max point: 19
 default prom_w = 0 
 #go to prom with: if it's 1 it means Roza, if it's 2 it means Lilla, if 0 then nobody, if -1 then Roza said no, if -2 Lilla said no, if 3 then Roza but not asked yet, if 4 then Lilla but not asked yet
 default answer = 0 #the number of good answers at the test

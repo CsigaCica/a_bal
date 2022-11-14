@@ -444,8 +444,6 @@ label daytwo:
                         l "Nincs mit [player]."
         show l
         pause 0.1
-
-# Iskola után 
     
     scene black_background with fade
     "Második nap vége"

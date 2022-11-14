@@ -307,8 +307,6 @@ label daythree:
 
             "Nem szeretném zavarni":
                 "Inkább hazamegyek."
-
-# Iskola után
     
     scene black_background with fade
     "Harmadik nap vége"

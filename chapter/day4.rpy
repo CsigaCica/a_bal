@@ -356,9 +356,7 @@ label dayfour:
 
             "Nem szeretném zavarni":
                 "Inkább csak hazamegyek."
-
-# Iskola után
-    
+                
     scene black_background with fade
     "Negyedik nap vége"
 
