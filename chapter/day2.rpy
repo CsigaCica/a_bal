@@ -359,8 +359,7 @@ label daytwo:
                         r "Mostmár sokkal több önbizalmam van a holnappal kapcsolatban!"
                         show r talk
                         r "Most mennem kell, de holnap még beszélünk!"
-                        r "Sok sikert a holnapi dolgozathoz!"
-                        
+                        r "Sok sikert a holnapi dolgozathoz!"                        
 
                     "Nem szeretném átismételni Rózával az anyagot":
                         label not_study_w_roza2:

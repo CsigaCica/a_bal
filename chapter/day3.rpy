@@ -42,6 +42,7 @@ label daythree:
     r "Igazad van!"
     r "Menni fog!"
 
+# Első dolgozat
     scene terem
     pause 0.2
     "*CSÖRRR*"

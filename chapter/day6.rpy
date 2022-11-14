@@ -7,7 +7,9 @@ label daysix:
 
     "*csirip-csirip*"
 
-    player " "
+    player "Ideje felkelni."
+    player "Ma végre kiderül hányas lett a második dolgozatom!"
+    
 
     scene folyoso 
     pause 0.4

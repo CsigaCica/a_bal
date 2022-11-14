@@ -24,10 +24,10 @@ label start:
     # "Róza pont: [point_r]"
     # "Lilla pont: [point_l]"
 
-    call dayfour
+    # call dayfour
 
-    "Róza pont: [point_r]"
-    "Lilla pont: [point_l]"
+    # "Róza pont: [point_r]"
+    # "Lilla pont: [point_l]"
 
     call dayfive
 
@@ -46,4 +46,6 @@ label start:
 
     "Vége"
    
+   
+
 return
