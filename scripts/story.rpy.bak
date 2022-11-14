@@ -9,37 +9,37 @@ label start:
 
     "Let's begin the game:"
     
-    call dayone from _call_dayone
+    call dayone
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    call daytwo from _call_daytwo 
+    call daytwo 
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    call daythree from _call_daythree
+    call daythree
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    call dayfour from _call_dayfour
+    call dayfour
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    call dayfive from _call_dayfive
+    call dayfive
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    call daysix from _call_daysix
+    call daysix
     
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"
 
-    call dayseven from _call_dayseven
+    call dayseven
 
     "Róza pont: [point_r]"
     "Lilla pont: [point_l]"

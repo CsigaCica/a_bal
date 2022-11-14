@@ -36,7 +36,7 @@ define gui.about = _("Készítette Deli Gréta Maja\nDunaújvárosi Egyetemi Viz
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "test"
+define build.name = "prom"
 
 
 ## Sounds and music ############################################################
@@ -151,6 +151,7 @@ define config.save_directory = "test-1657531254"
 
 define config.window_icon = "gui/window_icon.png"
 
+define config.layers = ["master", "transient", "backgrounds", "cardlayer", "spritelayer", "screens", "overlay"]
 
 ## Build configuration #########################################################
 ##
@@ -185,8 +186,8 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
@@ -206,3 +207,7 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+    build.name = "aBal"
+    build.directory_name = "myGame"
+    build.executable_name = "a Bál"

@@ -66,7 +66,7 @@ label daytwo:
                 show r talk
                 r "Ennek örülök!"
                 r "Lilla biztos tud segíteni a holnapi dolgozatra való felkészülésben!"
-                call exam_prom_talk_w_roza from _call_exam_prom_talk_w_roza
+                call exam_prom_talk_w_roza
 
 #Lilla megismerése
     elif know_lilla == 0:
@@ -446,6 +446,7 @@ label daytwo:
         pause 0.1
 
 # Iskola után 
+    call after_school
     
     scene black_background with fade
     "Második nap vége"

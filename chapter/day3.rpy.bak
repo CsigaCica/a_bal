@@ -64,7 +64,7 @@ label daythree:
     t "Akkor kezdem is."
     show t
      
-    call questions from _call_questions
+    call questions
     
     show t 
     show t talk with fade
@@ -309,6 +309,7 @@ label daythree:
                 "Inkább hazamegyek."
 
 # Iskola után
+    call after_school
     
     scene black_background with fade
     "Harmadik nap vége"

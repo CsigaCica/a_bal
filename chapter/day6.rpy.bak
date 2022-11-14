@@ -51,6 +51,7 @@ label second_result:
     pause
 
 # Iskola után
+    call after_school
     
     scene black_background with fade
     "Hatodik nap vége"   

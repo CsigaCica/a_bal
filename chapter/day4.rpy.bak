@@ -358,6 +358,7 @@ label dayfour:
                 "Inkább csak hazamegyek."
 
 # Iskola után
+    call after_school
     
     scene black_background with fade
     "Negyedik nap vége"

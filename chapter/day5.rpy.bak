@@ -352,8 +352,8 @@ label dayfive:
     hide l 
     hide r            
     "Ideje haza mennem."
-    
 # Iskola után
+    call after_school
     
     scene black_background with fade
     "Ötödik nap vége"   
