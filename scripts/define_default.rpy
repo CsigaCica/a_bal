@@ -19,12 +19,13 @@ define player = Character("az új diák")
 default class_a_or_b = 0 #if not 0 your class is A, if 0 then B
 default point_r = 0 #if 0 then you can't go to prom with her Max point: 22 TODO
 default point_l = 0 #if 0 then you can't go to prom with her Max point: 19 TODO
-default prom_w = 0 #go to prom with: if it's 1 it means Roza, if it's 2 it means Lilla, if 0 then nobody, if -1 then Roza said no, if -2 Lilla said no
-default answer = 0
-default have_a_name = 0
-default know_roza = 0
-default know_lilla = 0
-default know_zoli = 0
+default prom_w = 0 
+#go to prom with: if it's 1 it means Roza, if it's 2 it means Lilla, if 0 then nobody, if -1 then Roza said no, if -2 Lilla said no, if 3 then Roza but not asked yet, if 4 then Lilla but not asked yet
+default answer = 0 #the number of good answers at the test
+default have_a_name = 0 #to make sure, the player has a custom name
+default know_roza = 0 #if the player knows Roza, it's not 0
+default know_lilla = 0 #if the player knows Lilla, it's not 0
+default know_zoli = 0 #if the player knows Zoli, it's not 0
 
 #Róza
 image r = "roza/roza.png"
