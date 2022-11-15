@@ -61,14 +61,14 @@ label daysix:
             show z talk
             z "Köszi, hogy elmondtad! Jó tudni!"
             if prom_w == -1 or prom_w == 1 or prom_w == 3:     
-                if point_r < 11:           
+                if point_r < 7:           
                     z "Ha már te is elmondtad, én se titkolom!"
                     z "Én is arra gondoltam, hogy Rózával megyek."
                 else: 
                     z "Ha már te is elmondtad, én se titkolom!"
                     z "Én arra gondoltam, hogy Lillával megyek."
             else:
-                if point_l < 9:
+                if point_l < 6:
                     z "Ha már te is elmondtad, én se titkolom!"
                     z "Én is arra gondoltam, hogy Lillával megyek."
                 else: 
@@ -133,7 +133,7 @@ label daysix:
             player "Szia, ne haragudj!"
             show r shy shut 
             player "Tegnap nem válaszoltál, hogy eljössz-e velem a Bálba."
-            if point_r >= 11:
+            if point_r >= 7:
                 show r talk 
                 r "Jól van [player]."
                 r "Elmegyek veled a Bálba!"
@@ -164,7 +164,7 @@ label daysix:
             player "Szia, ne haragudj!"
             show l shy shut 
             player "Tegnap nem válaszoltál, hogy eljössz-e velem a Bálba."
-            if point_l >= 9:
+            if point_l >= 6:
                 show l talk 
                 l "Jól van [player]."
                 l "Elmegyek veled a Bálba!"
@@ -257,7 +257,7 @@ label daysix:
             player "Igen, komolyan."
             show r talk 
             r "Nagyön örülök, hogy megkérdeztél, [player]."
-            if point_r >= 11: 
+            if point_r >= 7: 
                 $ prom_w += 1
                 r "Szívesen megyek veled a Bálba!"
                 show r excited
@@ -301,7 +301,7 @@ label daysix:
             player "Igen, komolyan."
             show l talk 
             l "O, [player], nagyon megtisztelő, hogy rám gondoltál!"
-            if point_l >= 9: 
+            if point_l >= 6: 
                 $ prom_w += 2
                 show l excited
                 l "Tényleg jól esik, hogy engem hívtál el a Bálba!"

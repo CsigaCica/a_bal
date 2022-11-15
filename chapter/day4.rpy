@@ -180,7 +180,10 @@ label dayfour:
             l "Nagyon ügyes vagy!"
             l "Nem hiába tanultál annyit!"
             show l sad
-            l "Sajnos én egyet elrontottam."
+            if answer == 7:
+                l "Sajnos egyet és is elrontottam."
+            else:
+                l "Sajnos én egyet elrontottam."           
             l "Pedig olyan sokat tanultam rá..."
         else:
             show l sad
@@ -262,16 +265,17 @@ label dayfour:
                     l "Nagyon ügyes vagy!"
                     show l sad 
                     l "Bár nekem is annyi lett volna..."
-                    if answer == 7:
-                        l "De egyet én is elrontottam."
-                    else:
-                        l "De egyet elrontottam."
+                    l "Egyet sajnos elrontottam."
                 else:
                     player "Lehetett volna jobb is."
+                    player "[answer] pontom lett."
                     show l sad 
                     l "Megértem."
                     l "Sajnálom [player]."
-                    l "Egyet én is elrontottam."
+                    if answer == 7:
+                        l "Én is egyet rontottam el."
+                    else:
+                        l "Egyet én is elrontottam."                                       
                 show l sad shut
                 player "Ne szomorkodj, még nincs minden veszve."
                 player "Így is elmehetsz a Bálba."

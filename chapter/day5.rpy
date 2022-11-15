@@ -221,7 +221,7 @@ label dayfive:
                                 hide l 
                                 show r talk 
                                 r "Nagyön örülök, hogy megkérdeztél, [player]."
-                                if point_r >= 11:
+                                if point_r >= 7:
                                     $ prom_w += 1
                                     r "Szívesen megyek veled a Bálba!"
                                     show r excited
@@ -276,7 +276,7 @@ label dayfive:
                                 hide r 
                                 show l talk 
                                 l "O, [player], nagyon megtisztelő, hogy rám gondoltál!"
-                                if point_l >= 9: 
+                                if point_l >= 6: 
                                     $ prom_w += 2
                                     show l excited
                                     l "Tényleg jól esik, hogy engem hívtál el a Bálba!"
