@@ -24,12 +24,12 @@ screen preferences():
                         textbutton _("Ablak") action Preference("display", "window")
                         textbutton _("Teljes kitöltés") action Preference("display", "fullscreen")
 
-                vbox:
-                    style_prefix "check"
-                    label _("Átlépés")
-                    textbutton _("Látatlan szöveg") action Preference("skip", "toggle")
-                    textbutton _("Választás után") action Preference("after choices", "toggle")
-                    textbutton _("Változtatás") action InvertSelected(Preference("transitions", "toggle"))
+                # vbox:
+                #     style_prefix "check"
+                #     label _("Átlépés")
+                #     textbutton _("Látatlan szöveg") action Preference("skip", "toggle")
+                #     textbutton _("Választás után") action Preference("after choices", "toggle")
+                #     textbutton _("Változtatás") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -40,15 +40,15 @@ screen preferences():
                 style_prefix "slider"
                 box_wrap True
 
-                vbox:
+                # vbox:
 
-                    label _("Szöveg sebesség")
+                #     label _("Szöveg sebesség")
 
-                    bar value Preference("text speed")
+                #     bar value Preference("text speed")
 
-                    label _("Előreugrás az időben")
+                #     label _("Előreugrás az időben")
 
-                    bar value Preference("auto-forward time")
+                #     bar value Preference("auto-forward time")
 
                 vbox:
 

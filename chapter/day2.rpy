@@ -66,7 +66,7 @@ label daytwo:
                 show r talk
                 r "Ennek örülök!"
                 r "Lilla biztos tud segíteni a holnapi dolgozatra való felkészülésben!"
-                call exam_prom_talk_w_roza from _call_exam_prom_talk_w_roza
+                jump exam_prom_talk_w_roza
 
 #Lilla megismerése
     elif know_lilla == 0:
@@ -164,7 +164,7 @@ label daytwo:
                         hide l sad 
 
                     "Ezzel kapcsolatban nincs kérdésem":
-                        pause 0.0
+                        pass
                 
                 hide l
                 show l sad
@@ -195,7 +195,7 @@ label daytwo:
                         hide l shy 
 
                     "Nincs több kérdésem":
-                        pause 0.0
+                        pass
 
                 show l talk
                 l "De hamarosan becsengetnek úgyhogy ideje indulnunk órára."
@@ -248,7 +248,7 @@ label daytwo:
                 r "Hát legalább mostmár tudod."
 
             "Nincs ezzel kapcsolatban kérdésem.":
-                pause 0.0
+                pass
 
         show r talk
         r "Én is jó sokat tanulok rá!"    

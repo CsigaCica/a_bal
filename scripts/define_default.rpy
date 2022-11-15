@@ -17,8 +17,8 @@ define i = Character("???", color = "#2E2E2E")
 define player = Character("az új diák")
 
 default class_a_or_b = 0 #if not 0 your class is A, if 0 then B
-default point_r = 0 #if 0 then you can't go to prom with her Max point: 22 
-default point_l = 0 #if 0 then you can't go to prom with her Max point: 19
+default point_r = 0 #if < 7 then you can't go to prom with her, Max point: 22 
+default point_l = 0 #if < 6 then you can't go to prom with her, Max point: 19
 default prom_w = 0 
 #go to prom with: if it's 1 it means Roza, if it's 2 it means Lilla, if 0 then nobody, if -1 then Roza said no, if -2 Lilla said no, if 3 then Roza but not asked yet, if 4 then Lilla but not asked yet
 default answer = 0 #the number of good answers at the test
@@ -40,6 +40,8 @@ image r shy= "roza/shy.png"
 image r shy shut= "roza/shy_shut.png"
 image r what= "roza/what.png"
 image r what shut= "roza/what_shut.png"
+image r prom= "roza/prom.png"
+image r prom talk= "roza/prom_talk.png"
 
 
 #Lilla
@@ -55,6 +57,8 @@ image l shy= "lilla/shy.png"
 image l shy shut= "lilla/shy_shut.png"
 image l what= "lilla/what.png"
 image l what shut= "lilla/what_shut.png"
+image l prom= "lilla/prom.png"
+image l prom talk= "lilla/prom_talk.png"
 
 #Zoli
 image z = "zoli/zoli.png"

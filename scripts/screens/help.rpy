@@ -37,35 +37,35 @@ screen keyboard_help():
 
     hbox:
         label _("Enter")
-        text _("Advances dialogue and activates the interface.")
+        text _("Előrelép a párbeszédben.")
 
     hbox:
         label _("Szóköz")
-        text _("Advances dialogue without selecting choices.")
+        text _("Előrelép a párbeszédben.")
 
     hbox:
         label _("Nyilak")
-        text _("Navigate the interface.")
+        text _("Navigál a felhasználói felületen.")
 
     hbox:
         label _("Escape")
-        text _("Accesses the game menu.")
+        text _("Játékmenü megnyitása.")
 
     hbox:
         label _("Ctrl")
-        text _("Skips dialogue while held down.")
+        text _("Átugorja a dialógusokat.")
 
     hbox:
         label _("Tab")
-        text _("Toggles dialogue skipping.")
+        text _("Előregörget a legközelebbi választási lehetőségig.")
 
     hbox:
         label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
+        text _("Visszagörget egy előző dialógushoz.")
 
     hbox:
         label _("Page Down")
-        text _("Rolls forward to later dialogue.")
+        text _("Előregörget egy későbbi dialógushoz.")
 
     hbox:
         label "H"
@@ -88,7 +88,7 @@ screen mouse_help():
 
     hbox:
         label _("Bal gombnyomás")
-        text _("Előrelép a párbeszédben és aktiválja a felületet.")
+        text _("Előrelép a párbeszédben.")
 
     hbox:
         label _("Középső gombnyomás")
@@ -99,12 +99,12 @@ screen mouse_help():
         text _("Játékmenü.")
 
     hbox:
-        label _("Mouse Wheel Up\nClick Rollback Side")
-        text _("Rolls back to earlier dialogue.")
+        label _("Felfelé görgetés")
+        text _("Visszagörget egy előző dialógushoz.")
 
     hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
+        label _("Lefelé görgetés")
+        text _("Előregörget egy későbbi dialógushoz.")
 
 
 screen gamepad_help():
