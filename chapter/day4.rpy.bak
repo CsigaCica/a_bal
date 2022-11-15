@@ -248,7 +248,7 @@ label dayfour:
                 player "Mi a baj?"
                 show l sad 
                 l "Nem lett olyan jó a dolgozatom eredménye, mint szerettem volna."
-                l "Pedig olyan sokat készükltem rá."
+                l "Pedig olyan sokat készültem rá."
                 show l what
                 l "Ti is írtatok, igaz?"
                 l "Neked hány pontos lett?"

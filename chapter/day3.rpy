@@ -303,10 +303,10 @@ label daythree:
                 show r shy shut
                 pause 0.3
                 hide r
-                "Vajon mi ütött mindenkibe?"
+                player "Vajon mi ütött mindenkibe?"
 
             "Nem szeretném zavarni":
-                "Inkább hazamegyek."
+                player "Inkább hazamegyek."
     
     scene black_background with fade
     "Harmadik nap vége"

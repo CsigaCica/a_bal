@@ -8,24 +8,21 @@ label dayseven:
     "*csirip-csirip*"
 
     "Ideje felkelnem."
-    "Ma nem szabad elkésnem, hiszen ma írjuk az első dolgozatot."
-    
+    if answer >= 8:
+        player "Ma nem szabad elkésnem, hiszen ma nagy nap lesz!"
+        player "Ma lesz a Bál!"
+    else:
+        player "Nem szabad elkésnem."
+        player "Időben be kell érnem a korrepetálásra."
+
     menu:
-        "Izgulok miatta":
-            "Nagyon ideges vagyok miatta."
-            "Készültem rá, de vajon az elég lesz?"
-            "Kíváncsi vagyok mit fog kérdezni a tanárnő."
-
-        "Egyáltalán nem izgulok miatta":
-            "Nem vagyok ideges miatta."
-            "Sokat készültem rá."
-            "Nem tud olyat kérdezni, amire ne tudnám a választ."
+        "Ideges vagyok miatta":
+            player "eddig van kész"
+        "Egyáltalán nem izgulok ":
+            player "eddig van kész"
     
-    "De ideje indulnom!"
+    "Ideje végre indulnom!"
     
-
-    "Nem szeretném zavarni":
-    "Inkább hazamegyek."
 
     scene black_background with fade
 return

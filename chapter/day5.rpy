@@ -8,7 +8,7 @@ label dayfive:
     "*csirip-csirip*"
 
     "Ideje felkelnem."
-    "Ma nem szabad elkésnem, hiszen ma írjuk az első dolgozatot."
+    "Ma nem szabad elkésnem, hiszen ma írjuk a második dolgozatot."
     "Magabiztos vagyok!"
     "A mai dolgozat biztos jól fog menni!"
     "Ideje is indulnom!"
@@ -64,7 +64,7 @@ label dayfive:
     t "Akkor kezdem is."
     show t
      
-    call questions
+    call questions from _call_questions_1
     
     show t 
     show t talk with fade

@@ -293,7 +293,6 @@ label daytwo:
 
 
 # Második óra 
-    label class2_start:
     scene terem
     "*CSÖRRR*"
     "Le is ülök a helyemre, mielőtt ideér a tanárnő."

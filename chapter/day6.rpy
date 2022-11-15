@@ -253,7 +253,7 @@ label daysix:
             show r excited 
             r "Én?"
             r "Komolyan?"
-            show r excited shut at left
+            show r excited shut
             player "Igen, komolyan."
             show r talk 
             r "Nagyön örülök, hogy megkérdeztél, [player]."
@@ -294,13 +294,11 @@ label daysix:
             show r shy shut 
             player "Lilla, valami fontosat kell kérdeznem."
             player "Eljönnél velem a Bálba?"
-            show r sad shut at left
-            show l excited at right 
+            show l excited 
             l "Én?"
             l "Komolyan?"
-            show l excited shut at right
+            show l excited shut 
             player "Igen, komolyan."
-            hide r 
             show l talk 
             l "O, [player], nagyon megtisztelő, hogy rám gondoltál!"
             if point_l >= 9: 

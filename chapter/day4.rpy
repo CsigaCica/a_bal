@@ -248,7 +248,7 @@ label dayfour:
                 player "Mi a baj?"
                 show l sad 
                 l "Nem lett olyan jó a dolgozatom eredménye, mint szerettem volna."
-                l "Pedig olyan sokat készükltem rá."
+                l "Pedig olyan sokat készültem rá."
                 show l what
                 l "Ti is írtatok, igaz?"
                 l "Neked hány pontos lett?"
@@ -262,7 +262,10 @@ label dayfour:
                     l "Nagyon ügyes vagy!"
                     show l sad 
                     l "Bár nekem is annyi lett volna..."
-                    l "De egyet elrontottam."
+                    if answer == 7:
+                        l "De egyet én is elrontottam."
+                    else:
+                        l "De egyet elrontottam."
                 else:
                     player "Lehetett volna jobb is."
                     show l sad 
@@ -356,7 +359,7 @@ label dayfour:
 
             "Nem szeretném zavarni":
                 "Inkább csak hazamegyek."
-                
+
     scene black_background with fade
     "Negyedik nap vége"
 
