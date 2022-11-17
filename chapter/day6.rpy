@@ -35,8 +35,8 @@ label daysix:
 # Beszélgetés Zolival
     scene folyoso with fade
     pause 0.4
+    show z talk 
     if know_zoli == 0:
-        show z talk 
         i "Szia [player]!"
         i "Én Zoli vagyok."
         z "Furcsa, hogy még nem is beszéltünk, hiszen osztálytársak vagyunk!"
@@ -116,7 +116,7 @@ label daysix:
     show t 
     "*CSÖRRR*"
     hide t
-    if answer == 18:
+    if answer == 16:
         player "De jó! Max pontos lett!"
         $ point_l += 1
         $ point_r += 1
@@ -289,9 +289,9 @@ label daysix:
 
 # Lilla elhívása a Bálba
         else:
-            show r 
+            show l 
             player "Szia, ne haragudj!"
-            show r shy shut 
+            show l shy shut 
             player "Lilla, valami fontosat kell kérdeznem."
             player "Eljönnél velem a Bálba?"
             show l excited 

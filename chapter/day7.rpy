@@ -24,13 +24,12 @@ label dayseven:
     else:
         player "Nem szabad elkésnem."
         player "Időben be kell érnem a korrepetálásra."
+        menu:
+            "Ideges vagyok miatta":
+                player "Izgulok, hogy vajon milyen lesz a mai nap!"
 
-    menu:
-        "Ideges vagyok miatta":
-            player "Izgulok, hogy vajon milyen lesz a mai nap!"
-
-        "Egyáltalán nem izgulok ":
-            player "Nem igazán izgat, hogy mi lesz ma."
+            "Egyáltalán nem izgulok ":
+                player "Nem igazán izgat, hogy mi lesz ma."
     
     "Ideje végre indulnom!"
 

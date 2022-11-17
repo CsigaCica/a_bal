@@ -102,7 +102,7 @@ label dayfive:
     show l at right
     menu: 
         "Elmondom az igazat":
-            if answer >=10: 
+            if answer >=8: 
                 $ point_r +=1
                 $ point_l +=1
                 label good_grades:

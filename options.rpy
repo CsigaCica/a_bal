@@ -209,5 +209,6 @@ init python:
 # define build.itch_project = "renpytom/test-project"
 
     build.name = "aBal"
-    build.directory_name = "myGame"
-    build.executable_name = "a Bál"
+    build.directory_name = "aBal"
+    build.executable_name = "A Bál"
+    build.change_icon_i686 = True

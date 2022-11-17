@@ -75,13 +75,13 @@ screen keyboard_help():
         label "S"
         text _("Képernyőkép készítése.")
 
-    hbox:
-        label "V"
-        text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
+    # hbox:
+    #     label "V"
+    #     text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
 
-    hbox:
-        label "Shift+A"
-        text _("Játékmenü megnyitása.")
+    # hbox:
+    #     label "Shift+A"
+    #     text _("Játékmenü megnyitása.")
 
 
 screen mouse_help():
@@ -91,8 +91,8 @@ screen mouse_help():
         text _("Előrelép a párbeszédben.")
 
     hbox:
-        label _("Középső gombnyomás")
-        text _("A felhasználói felület elrejtése.")
+        label _("Görgő gombnyomás")
+        text _("Párbeszéd elrejtése.")
 
     hbox:
         label _("Jobb gombnyomás")

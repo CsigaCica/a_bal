@@ -21,7 +21,7 @@ screen navigation():
             xalign 0.5
             yalign 0.7
         else:
-            xalign 0.04
+            xalign 0.05
             yalign 0.5
         
         spacing gui.navigation_spacing

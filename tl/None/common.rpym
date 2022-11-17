@@ -123,99 +123,99 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Monday"
-    new "{#weekday}Monday"
+    new "{#weekday}Hétfő"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Tuesday"
-    new "{#weekday}Tuesday"
+    new "{#weekday}Kedd"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Wednesday"
-    new "{#weekday}Wednesday"
+    new "{#weekday}Szerda"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Thursday"
-    new "{#weekday}Thursday"
+    new "{#weekday}Csütörtök"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Friday"
-    new "{#weekday}Friday"
+    new "{#weekday}Péntek"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Saturday"
-    new "{#weekday}Saturday"
+    new "{#weekday}Szombat"
 
     # renpy/common/00action_file.rpy:26
     old "{#weekday}Sunday"
-    new "{#weekday}Sunday"
+    new "{#weekday}Vasárnap"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Mon"
-    new "{#weekday_short}Mon"
+    new "{#weekday_short}Hét"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Tue"
-    new "{#weekday_short}Tue"
+    new "{#weekday_short}Ked"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Wed"
-    new "{#weekday_short}Wed"
+    new "{#weekday_short}Sze"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Thu"
-    new "{#weekday_short}Thu"
+    new "{#weekday_short}Csü"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Fri"
-    new "{#weekday_short}Fri"
+    new "{#weekday_short}Pén"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Sat"
-    new "{#weekday_short}Sat"
+    new "{#weekday_short}Szo"
 
     # renpy/common/00action_file.rpy:37
     old "{#weekday_short}Sun"
-    new "{#weekday_short}Sun"
+    new "{#weekday_short}Vas"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}January"
-    new "{#month}January"
+    new "{#month}Január"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}February"
-    new "{#month}February"
+    new "{#month}Február"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}March"
-    new "{#month}March"
+    new "{#month}Március"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}April"
-    new "{#month}April"
+    new "{#month}Április"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}May"
-    new "{#month}May"
+    new "{#month}Május"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}June"
-    new "{#month}June"
+    new "{#month}Június"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}July"
-    new "{#month}July"
+    new "{#month}Július"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}August"
-    new "{#month}August"
+    new "{#month}Augusztus"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}September"
-    new "{#month}September"
+    new "{#month}Szeptember"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}October"
-    new "{#month}October"
+    new "{#month}Október"
 
     # renpy/common/00action_file.rpy:47
     old "{#month}November"
@@ -235,23 +235,23 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Mar"
-    new "{#month_short}Mar"
+    new "{#month_short}Már"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Apr"
-    new "{#month_short}Apr"
+    new "{#month_short}Ápr"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}May"
-    new "{#month_short}May"
+    new "{#month_short}Máj"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jun"
-    new "{#month_short}Jun"
+    new "{#month_short}Jún"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Jul"
-    new "{#month_short}Jul"
+    new "{#month_short}Júl"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Aug"
@@ -259,11 +259,11 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Sep"
-    new "{#month_short}Sep"
+    new "{#month_short}Sze"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Oct"
-    new "{#month_short}Oct"
+    new "{#month_short}Okt"
 
     # renpy/common/00action_file.rpy:63
     old "{#month_short}Nov"
@@ -279,15 +279,15 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:364
     old "Save slot %s: [text]"
-    new "Save slot %s: [text]"
+    new "Mentés %s: [text]"
 
     # renpy/common/00action_file.rpy:445
     old "Load slot %s: [text]"
-    new "Load slot %s: [text]"
+    new "Betöltés %s: [text]"
 
     # renpy/common/00action_file.rpy:498
     old "Delete slot [text]"
-    new "Delete slot [text]"
+    new "Törlés [text]"
 
     # renpy/common/00action_file.rpy:577
     old "File page auto"
@@ -303,15 +303,15 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:639
     old "Page {}"
-    new "Page {}"
+    new "Oldal {}"
 
     # renpy/common/00action_file.rpy:639
     old "Automatic saves"
-    new "Automatic saves"
+    new "Automatikus mentések"
 
     # renpy/common/00action_file.rpy:639
     old "Quick saves"
-    new "Quick saves"
+    new "Gyors mentések"
 
     # renpy/common/00action_file.rpy:780
     old "Next file page."
@@ -327,11 +327,11 @@ translate None strings:
 
     # renpy/common/00action_file.rpy:931
     old "Quick save."
-    new "Quick save."
+    new "Gyors mentés."
 
     # renpy/common/00action_file.rpy:950
     old "Quick load."
-    new "Quick load."
+    new "Gyors töltés."
 
     # renpy/common/00action_other.rpy:381
     old "Language [text]"
@@ -355,7 +355,7 @@ translate None strings:
 
     # renpy/common/00director.rpy:1551
     old "Done"
-    new "Done"
+    new "Kész"
 
     # renpy/common/00director.rpy:1561
     old "(statement)"
@@ -459,7 +459,7 @@ translate None strings:
 
     # renpy/common/00gui.rpy:441
     old "Are you sure you want to end the replay?"
-    new "Biztos vagy benne, hogy vége legyen az újrajátszásnak??"
+    new "Biztos vagy benne, hogy vége legyen az újrajátszásnak?"
 
     # renpy/common/00gui.rpy:442
     old "Are you sure you want to begin skipping?"
@@ -479,7 +479,7 @@ translate None strings:
 
     # renpy/common/00keymap.rpy:322
     old "Saved screenshot as %s."
-    new "Képernyőkép mentése sikeres volt %s néven"
+    new "Képernyőkép mentése sikeres volt %s néven."
 
     # renpy/common/00library.rpy:211
     old "Skip Mode"
